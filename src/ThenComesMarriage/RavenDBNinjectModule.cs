@@ -24,15 +24,13 @@ namespace ThenComesMarriage
 				ConnectionStringName = "RavenDB"
 			};
 			documentStore.Initialize();
-			documentStore.DatabaseCommands.EnsureDatabaseExists(ConfigurationManager.AppSettings["Raven.Database.Name"]);
-
 			return documentStore;
 		}
 
 		private IDocumentSession OpenDocumentSession(IContext context)
 		{
 			IDocumentStore documentStore = (IDocumentStore)Kernel.GetService(typeof(IDocumentStore));
-			return documentStore.OpenSession(ConfigurationManager.AppSettings["Raven.Database.Name"]);
+			return documentStore.OpenSession();
 		}
 	}
 }
