@@ -1,16 +1,16 @@
+using System.Web.Mvc;
+using Microsoft.Web.Infrastructure.DynamicModuleHelper;
+using Ninject;
+using Ninject.Web.Common;
+using System;
+using System.Web;
+using Ninject.Web.Mvc;
+using ThenComesMarriage.Ninject;
+
 [assembly: WebActivator.PreApplicationStartMethod(typeof(ThenComesMarriage.App_Start.NinjectWebCommon), "Start")]
 [assembly: WebActivator.ApplicationShutdownMethodAttribute(typeof(ThenComesMarriage.App_Start.NinjectWebCommon), "Stop")]
-
 namespace ThenComesMarriage.App_Start
 {
-    using System;
-    using System.Web;
-
-    using Microsoft.Web.Infrastructure.DynamicModuleHelper;
-
-    using Ninject;
-    using Ninject.Web.Common;
-
     public static class NinjectWebCommon 
     {
         private static readonly Bootstrapper bootstrapper = new Bootstrapper();
@@ -23,6 +23,9 @@ namespace ThenComesMarriage.App_Start
             DynamicModuleUtility.RegisterModule(typeof(OnePerRequestHttpModule));
             DynamicModuleUtility.RegisterModule(typeof(NinjectHttpModule));
             bootstrapper.Initialize(CreateKernel);
+
+            ControllerBuilder.Current.SetControllerFactory(new ControllerFactory(bootstrapper.Kernel));
+            DependencyResolver.SetResolver(new NinjectDependencyResolver(bootstrapper.Kernel));
         }
         
         /// <summary>
