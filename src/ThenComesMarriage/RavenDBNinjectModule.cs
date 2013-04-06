@@ -21,7 +21,7 @@ namespace ThenComesMarriage
 		{
 			DocumentStore documentStore = new DocumentStore
 			{
-				ConnectionStringName = "RavenDB"
+				ConnectionStringName = "RavenHQ"
 			};
 			documentStore.Initialize();
 			return documentStore;
