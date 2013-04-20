@@ -12,7 +12,20 @@
     @RenderSection("Scripts", required: false)
 </head>
 <body>
-    <div>
+    <div id="page">
+        <div class="header row">
+            <div class="half logo mockup">Logo</div>
+            <div class="quarter push-right sign-in mockup">Sign in/register/my account</div>
+        </div>
+        <nav class="nav-tabs mockup">
+            <ul>
+                <li><a href="#Home">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+                <li><a href="#">Item 5</a></li>
+            </ul>
+        </nav>
         @RenderBody()
     </div>
 </body>

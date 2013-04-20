@@ -155,12 +155,16 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Global.asax" />
+    <None Include="Scripts\jquery-2.0.0.intellisense.js" />
+    <Content Include="Scripts\jquery-2.0.0.js" />
+    <Content Include="Scripts\jquery-2.0.0.min.js" />
     <Content Include="Scripts\kube.buttons.js" />
     <Content Include="Scripts\kube.tabs.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Style\kube.css" />
     <Content Include="Style\kube.min.css" />
     <Content Include="Style\master.css" />
+    <Content Include="Style\screen.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -185,6 +189,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\Desktop Deploy.pubxml" />
+    <Content Include="Scripts\jquery-2.0.0.min.map" />
     <None Include="Web.Staging.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

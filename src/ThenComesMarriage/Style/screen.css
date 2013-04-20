@@ -1,0 +1,22 @@
+﻿.mockup {
+    background-color: #73C573;
+}
+/* =Layout.cshtml
+-----------------------------------------------------------------------------*/
+.header {
+    position: relative;
+    margin-bottom: .5em;
+}
+.logo {
+    text-align: center;
+    height: 100px;
+    vertical-align: middle;
+}
+.sign-in {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

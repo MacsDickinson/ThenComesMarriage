@@ -18,7 +18,9 @@ namespace ThenComesMarriage.App_Start
 						"~/Scripts/modernizr-*"));
 
 			bundles.Add(new StyleBundle("~/kube").Include("~/Style/kube.css"));
-			bundles.Add(new StyleBundle("~/css").Include("~/Style/master.css"));
+			bundles.Add(new StyleBundle("~/css").Include(
+				"~/Style/master.css",
+				"~/Style/screen.css"));
 
 		}
 	}
