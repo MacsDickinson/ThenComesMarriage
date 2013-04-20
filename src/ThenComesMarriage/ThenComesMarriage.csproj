@@ -145,6 +145,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\kube.buttons.js" />
+    <Content Include="Scripts\kube.tabs.js" />
+    <Content Include="Style\kube.css" />
+    <Content Include="Style\kube.min.css" />
+    <Content Include="Style\master.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
