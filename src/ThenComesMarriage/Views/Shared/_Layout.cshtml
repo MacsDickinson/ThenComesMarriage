@@ -1,12 +1,70 @@
-﻿<!DOCTYPE html>
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Then Comes Marriage</title>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/kube")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/kube")
+    @Styles.Render("~/css")
+    @RenderSection("Scripts", required: false)
 </head>
 <body>
-    <div>
+    <div id="page">
+        <div class="header row">
+            <div class="half logo mockup">Logo</div>
+            <div class="quarter push-right sign-in mockup">Sign in/register/my account</div>
+        </div>
+        <nav class="nav-tabs mockup">
+            <ul>
+                <li><a href="#Home">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+                <li><a href="#">Item 5</a></li>
+            </ul>
+        </nav>
         @RenderBody()
+    </div>
+    <div class="footer mockup container row">
+        <div class="third">
+            <h2>Footer Header</h2>
+            <nav class="nav-v">
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="third">
+            <h2>Footer Header</h2>
+            <nav class="nav-v">
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="third">
+            <h2>Footer Header</h2>
+            <nav class="nav-v">
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </body>
 </html>
