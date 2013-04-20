@@ -22,11 +22,31 @@
 }
 .footer {
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
     min-height: 250px;
 }
     .footer h2 {
         padding: 15px 0 5px;
+    }
+/* =Home/Index.cshtml
+-----------------------------------------------------------------------------*/
+.promo-image {
+    height: 200px;
+    background-size: 100%;
+    background-image: url('https://dl.dropboxusercontent.com/u/10918652/Becci%26Macs-331.jpg');
+    
+}
+    .promo-text {
+        position: relative;
+        height: 200px;
+        background-color: #FFF;
+        background-color: rgba(255, 255, 255, .93);
+    }
+        .promo-text p {
+            padding: 30px 5px 10px;
+            text-align: center;
+        }
+    .promo-btn {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
     }
