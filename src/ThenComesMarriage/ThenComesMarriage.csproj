@@ -157,6 +157,7 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\kube.buttons.js" />
     <Content Include="Scripts\kube.tabs.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Style\kube.css" />
     <Content Include="Style\kube.min.css" />
     <Content Include="Style\master.css" />
