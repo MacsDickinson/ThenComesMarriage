@@ -9,10 +9,8 @@
 }
 .logo {
     text-align: center;
-    height: 205px;
+    height: 100px;
     vertical-align: middle;
-    background-image: url('https://dl.dropboxusercontent.com/u/10918652/TCM_Logo.png');
-    background-size: 100%;
 }
 .sign-in {
     text-align: center;
