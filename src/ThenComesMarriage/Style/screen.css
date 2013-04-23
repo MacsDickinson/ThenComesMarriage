@@ -9,8 +9,10 @@
 }
 .logo {
     text-align: center;
-    height: 100px;
+    height: 205px;
     vertical-align: middle;
+    background-image: url('https://dl.dropboxusercontent.com/u/10918652/TCM_Logo.png');
+    background-size: 100%;
 }
 .sign-in {
     text-align: center;
@@ -21,13 +23,19 @@
     right: 0;
 }
 #nav-main {
+    margin: 1em 0;
     text-align: justify;
     -ms-text-justify: distribute;
     text-justify: distribute;
 }
-#nav-main li {
-    margin-top: 1em;
-    display: inline-block;
+#nav-main a {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    border-radius: 10px !important;
+    border: 2px dashed #ddd;
 }
 .footer {
     width: 100%;
